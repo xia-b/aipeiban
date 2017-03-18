@@ -1,0 +1,359 @@
+/*面包屑导航*/
+.breadcrumb{
+	.font12;
+	padding: 10px 0;
+	a{
+		display: inline-block;
+	}
+	span{
+		.col-hui;
+	}
+	.symbol{
+		.col-hui;
+		font-family: '宋体';
+	}
+}
+/*侧边导航*/
+.side-nav{
+	.bg-bai;
+	.l-left;
+	width: 200px;
+	li {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		}
+}
+.sub-active{
+	background: #ddf5ea;
+	.col-first;
+}
+/*个人中心*/
+.content-right{
+	.bg-bai;
+	.l-right;
+	.w980;
+}
+.content-box{
+	padding: 40px 20px;
+}
+.myinfo{
+	.mrl20;
+	padding: 50px 0;
+	a{
+		.mrt10;
+		.col-second; 
+		.font12;
+	}
+}
+.member-info{
+	margin-left: 200px;
+	p{
+		.mrtb20;
+	}
+	span{
+		.col-second;
+	}
+}
+.item-class{
+	.mrt40;
+	li{
+		width: 50%;
+		float: left;
+		.mrb40;
+		.item-class-info{
+			float: left;
+			padding: 30px 0 28px 20px ;
+		}
+		img{
+			float: left;
+		}
+		a{
+			.font12;
+			.col-qhei;
+			.mrt10;
+		}
+		.num{
+			.col-second;
+		}
+	}
+}
+/*我的订单*/
+.order-list{
+	.order-detail{
+		.mrb20;
+		border: #50c6ae 1px solid;
+		.order-staus{
+			.col-second;
+			padding: 20px 20px 0 20px;
+			background: #ddf5ea;
+		}
+		.order-detail-table{
+			th{
+				background: #ddf5ea;
+				.col-qhei;
+			}
+			.col-main{
+				width: 780px;
+				padding: 10px 20px 20px 20px;
+			}
+		}
+		.good-list{
+			.pdlr20;
+			li{
+				position: relative;
+				padding: 26px 0  26px 120px; 
+				margin: 20px 0;
+				.figure{
+					position: absolute;
+					left: 0;
+					top: 0;
+
+				}
+			}
+		}
+		.order-actions{
+			padding-top: 20px;
+		    text-align: right;
+		    vertical-align: top;
+			.btn{
+				margin:0 20px 10px auto;
+			}
+		}
+	}
+}
+.col-sub{
+	text-align: right;
+	width: 200px;
+	padding: 0 20px 20px 0;
+	.num{
+		.col-second;
+		.font24;
+		font-weight: bold;
+		i{
+			.font14;
+		}
+	}
+}
+.zui-tab-content{
+	padding: 20px 0 0 0!important;
+	
+}
+.zui-tab .zui-tab-title li{
+	min-width: 0!important;
+	border-radius: 0;
+
+}
+.zui-active{
+	border-top:#50c6ae 2px solid!important; 
+	.col-first;
+}
+/*订单详情*/
+.order-detail-btn{
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+.order-detail-shop{
+	th,td{
+		text-align: center;
+	}
+	.figure,.name{
+		display: inline-block;
+	}
+	.total{
+		.col-second;
+	}
+}
+.zui-table tbody tr:hover{
+	background: #fff;
+}
+.order-sum-box{
+	.mrt20;
+	float: right;
+	.order-sum{
+		text-align: right;
+		line-height: 24px;
+		label{
+			display: inline-block;
+			width: 100px;
+			span{
+				text-align: right;
+				.col-second;
+			}
+		}
+	}
+}
+.order-progress{
+	.pdtb40;
+	text-align: center;
+}
+/*支付订单*/
+.order-info{
+	padding-left: 100px;
+}
+.order-message{
+	margin-left: 100px;
+	padding-top: 20px;
+	border-top: #e6e6e6 1px solid;
+	display: none;
+	li{
+		margin-bottom: 10px;
+		line-height: 24px;
+		.clearfix();
+	}
+	.label{
+		width: 80px;
+		float: left;
+	}
+	.content{
+		float: left;
+	}
+}
+.cash-title{
+	.pdb20;
+	.border-b;
+}
+.payment-box{
+	.mrt20;
+	.payment-title{
+		.font16;
+	}
+	.payment-body{
+		.payment-list{
+			margin-left: -10px;
+			li{
+				width: 185px;
+				height: 60px;
+				float: left;
+				margin: 10px 0 0 10px;
+				cursor: pointer;
+				.border; 
+				&:hover{
+					border: #50c6ae 1px solid;
+				}
+			}
+		}
+	}
+}
+.recommend-box{
+	margin-left: -20px;
+	.mrt10;
+}
+.recommend-list{
+	width: 224px;
+	height: 300px;
+	background: #fff;
+	text-align: center;
+	float: left;
+	margin: 0 0 20px 20px;
+	&:hover{
+	  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+	}
+	dl{
+		.pdlr20;
+		position: relative;
+		padding-top: 50px;
+	}
+	.recommend-name{
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		margin-top: 30px;
+	}
+	.recommend-price{
+		.col-second;
+		margin-top: 10px;
+	}
+	.recommend-tips{
+		.col-qhei;
+		margin-top: 30px;
+		}
+	}
+	.add-cart{
+		.btn; 
+		.btn-line-qing; 
+		.btn-samll; 
+		.col-first;
+		display: none;
+		position: absolute;
+		left: 50%;
+		margin-left: -46px;
+		bottom: -60px;
+		z-index: 999;
+		&:hover{
+			background: #50c6ae;
+			color: #fff;
+	}
+}
+.recommend-list:hover .add-cart{
+	display: block;
+}
+.recommend-list:hover .recommend-tips{
+	display: none;
+}
+.collect-box{
+	margin-left: -20px;
+	.mrt20;
+	.recommend-list{
+		width: 300px;
+		height: 400px;
+		.border;
+		img{
+			width: 170px;
+			height: 170px;
+		}
+	}
+}
+/*地址管理*/
+.address-box{
+	margin-left: -20px;
+	.mrt20;
+	.address-list{
+		width: 275px;
+		height: 155px;
+		line-height: 20px;
+		cursor: pointer;
+		float: left;
+		margin: 0 0 20px 20px;
+		&:hover{
+			border: #50c6ae 1px solid;
+		}
+		.border;
+		dl{
+			.pd20;
+		}
+		.btn-handle{
+			.pdlr20;
+			.font12;
+			.col-first;
+			margin-left: -10px;
+			.modify{
+				float: left;
+				margin-left: 10px;
+			}
+		}
+		.icon-add{
+			font-size: 30px;
+			display: block;
+			text-align: center;
+			padding: 52px 0 10px 0;
+		}
+	}
+}
+#modify-content{
+	display: none;
+}
+.zui-input-block{
+	select{
+		width: 190px!important;
+		float: left;
+		margin-right: 10px;
+	}
+}
+.zui-form-label{
+	span{
+		color: #ff5b02;
+	}
+}

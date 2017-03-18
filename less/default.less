@@ -1,0 +1,117 @@
+@import "lib/all.less";
+@support-ie-version: 10;
+@default-font-size: 14px;
+@support-ie-version: 7;
+@use-autoprefixer: false;
+@support-html5: true;
+@default-text-color:#333;
+@default-input-placeholder-color:#999;
+@default-base-font-family:"Microsoft YaHei", Arial, sans-serif;
+@default-heading-font-family:"Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+@default-old-ie-heading-font-family:"Microsoft YaHei", Arial, sans-serif;
+@default-code-font-family:Monaco, Consolas, monospace;
+@default-border-radius:5px;
+// global scope
+.global-normalize-opentype();
+// global scope
+.global-reset();
+// global scope
+.reset-html5();
+// // global scope
+// .global-normalize();
+body {
+        font-family: "Microsoft YaHei";
+        color: #333;
+        font-size: 14px;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        border: 0;
+}
+input,select{
+    border-radius: 0!important;
+}
+a{
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    color: #50c6ae;
+    text-decoration: none;
+}
+dd{
+    display: block;
+}
+img{
+    border: none;
+    vertical-align: middle;
+}
+i{
+    font-style: normal;
+}
+h1{
+  font-size: 24px;
+}
+h2{
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+h3{
+    font-size: 14px;
+}
+h4{
+    font-size: 12px;
+}
+div,ul{
+    .clearfix();
+}
+p{
+    line-height: 24px;
+}
+hr{
+    height: 1px;
+    border: 0;
+    background-color: #e6e6e6;
+}
+.l-left{
+    float: left;
+}
+.l-right{
+    float: right;
+}
+.l-float{
+    .clearfix();
+    margin: 0 auto;
+}
+.dis-b{
+    display: block !important;
+}
+.dis-i{
+    display: inline-block !important;
+}
+.pos-r{
+    position: relative;
+}
+.pos-a{
+    position: absolute;
+}
+.new-box-shadow:hover{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow:0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.box-shadow:hover{
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.border{
+    border: #e6e6e6 1px solid;
+}
+.border-b{
+    border-bottom: #e6e6e6 1px solid;
+}
+.border-head{
+    border-bottom: #50c6ae 2px solid;
+}

@@ -1,0 +1,63 @@
+.header{
+	width: 100%;
+	height: 60px;
+	background:#fff;
+	.logo{
+		.l-left;
+		margin-top: 10px;
+	}
+	.nav{
+		font-size: 16px;
+		line-height: 60px;
+		.l-right;
+		margin-right: 20px;
+		li{
+			float: left;
+			padding: 0 20px;
+			.nav-active{
+				color: #50c6ae;
+			}
+		}
+	}
+	.shopping-cart{
+		.l-right;
+		margin-top: 15px;
+	}
+}
+.head-title{
+	float: left;
+	line-height: 60px;
+	margin-left: 50px;
+}
+.user{
+	float: right;
+	line-height: 60px;
+	position: relative;
+	width: 80px;
+	text-align: center;
+	.font12;
+	.user-menu{
+	    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	    z-index: 999;
+	    background: #fff;
+	    display: none;
+	    position: absolute;
+	    top: 50px;
+	    right: 0;
+	    li{
+	    	width: 80px;
+	    	height: 30px;
+	    	line-height: 30px;
+	    	text-align: center;
+	    	a:hover{
+	    		background: #f8f8f8;
+	    	}
+	    }
+	}
+}
+.user:hover .user-menu{
+	display: block;
+}
+.zui-iconfont{
+	.font12;
+}
