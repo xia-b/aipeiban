@@ -96,21 +96,21 @@
 					<div class="zui-form-item"> 
 						<label class="zui-form-label"><span>*</span>所在地区：</label> 
 						<div class="zui-input-block"> 
-							 <select class="zui-select" name="interest"> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
 								<option value="0">广西</option> 
 								<option value="1" selected="">广东省</option> 
 								<option value="2">北京</option> 
 								<option value="3">上海</option> 
 								<option value="4">湖南</option> 
 							</select> 
-							 <select class="zui-select" name="interest"> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
 								<option value="0">广州</option> 
 								<option value="1" selected="">中山市</option> 
 								<option value="2">江门</option> 
 								<option value="3">佛山</option> 
 								<option value="4">肇庆</option> 
 							</select> 
-							 <select class="zui-select" name="interest"> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
 								<option value="0">小榄</option> 
 								<option value="1" selected="">火炬开发区</option> 
 								<option value="2">东凤</option> 
@@ -214,15 +214,14 @@
   <script src="../Js/PcSite/jquery-1.9.1.min.js"></script>
   <!-- Swiper JS -->
   <script src="../Js/PcSite/swiper.min.js"></script>
-  <script src="../zui/Js/PcSite/zui.js"></script>
 	<!-- modify-content 显示/隐藏 -->
 	<script type="text/javascript">
 	$(document).ready(function(){
 	  $(".btn").click(function(){
-	  $("#modify-content").hide();
+		  $("#modify-content").slideUp("slow");
 	  });
 	  $(".edit,.address-add").click(function(){
-	  $("#modify-content").show();
+		  $("#modify-content").slideDown("slow");
 	  });
 	});
 	</script>

@@ -6,6 +6,7 @@
 		width: 400px;
 		height: 450px;
 		float: left;
+		overflow: hidden;
 		.content{
 			position: absolute;
 			top: 0;
@@ -28,9 +29,8 @@
 		}
 		.content-active{
 			position: absolute;
-			top: 0;
+			top: 450px;
 			height: 100%;
-			display: none;
 			text-align: center;
 			.bg-qing;
 			opacity: 0.9;
@@ -60,14 +60,19 @@
 
 	}
 	.item-list:hover .content-active{
-		display: block;
-	}
+		top: 0;
+		transition:top .8s;
+		-moz-transition:top .8s; /* Firefox 4 */
+		-webkit-transition:top .8s; /* Safari and Chrome */
+		-o-transition:top .8s; /* Opera */	}
 	.item-list:hover .content{
 		display: none;
 	}
 	.btn-link:hover{
 		.bg-bai;
 		.col-first;
+    transition: all .3s linear;
+    -webkit-transition:all .3s linear;
 	}
 }
 .new-list{
@@ -95,6 +100,12 @@
 			}
 		}
 	}
+}
+.zui-page{
+	margin:20px 0 0 0!important;
+}
+.zui-page .zui-page-curr .zui-page-em{
+	.bg-qing!important;
 }
 .partner-list{
 	.pos-r;
