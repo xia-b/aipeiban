@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>爱陪伴</title>
+  <link rel="icon" href="../Images/PcSite/logo.ico">
+  <link href="../Css/PcSite/swiper.min.css" rel="stylesheet">
+  <link href="../Css/PcSite/zui.css" rel="stylesheet">
+  <link href="../Css/PcSite/main.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- header -->
+	<div class="header border-head">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="../Images/PcSite/logo.png" height="40" width="98" alt=""></a>				
+			</div>
+			<div class="head-title"><h1>确认订单</h1></div>
+			<div class="user">
+				<a href="" class="user-name">夏北Rita<span class="zui-iconfont">&#xe661</span></a>
+				<ul class="user-menu">
+					<li><a href="member.html">个人中心</a></li>
+					<li><a href="order-detail.html">我的订单</a></li>
+					<li><a href="index.html">退出登录</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+	
+	<div class="container pdtb20">
+		<div class="content-box bg-bai">
+			<div class="border-b">
+				<h2>收货信息</h2>
+				<ul class="address-box">
+					<li class="address-list">
+						<dl>
+							<dt>夏北Rita</dt>
+							<dd>168****0436</dd>
+							<dd>广东 中山市 中山市 火炬开发区 综合行政执法局 </dd>
+						</dl>
+						<div class="btn-handle">
+							<div class="modify">设为默认</div>
+							<div class="modify edit">编辑</div>
+							<div class="modify">删除</div>
+						</div>
+					</li>
+					<li class="address-list">
+						<i class="zui-iconfont icon-add">&#xe767;</i>
+						<a style="text-align:center" class="address-add">添加新地址</a>
+					</li>
+				</ul>
+				<div class="zui-forms mrb20" id="modify-content">
+					<div class="zui-form-item">
+						<label class="zui-form-label"><span>*</span>收货人：</label>
+						<div class="zui-input-inline">
+							<input type="text" name="name" verify="name" autocomplete="off" value="夏北Rita" placeholder="请输入名字" class="zui-input"> 
+						</div>
+					</div>
+					<div class="zui-form-item"> 
+						<label class="zui-form-label"><span>*</span>所在地区：</label> 
+						<div class="zui-input-block"> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
+								<option value="0">广西</option> 
+								<option value="1" selected="">广东省</option> 
+								<option value="2">北京</option> 
+								<option value="3">上海</option> 
+								<option value="4">湖南</option> 
+							</select> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
+								<option value="0">广州</option> 
+								<option value="1" selected="">中山市</option> 
+								<option value="2">江门</option> 
+								<option value="3">佛山</option> 
+								<option value="4">肇庆</option> 
+							</select> 
+							 <select class="zui-select" name="interest" style="width:190px;"> 
+								<option value="0">小榄</option> 
+								<option value="1" selected="">火炬开发区</option> 
+								<option value="2">东凤</option> 
+								<option value="3">石岐</option> 
+								<option value="4">沙溪</option> 
+							</select> 
+						</div> 
+					</div> 
+					<div class="zui-form-item">
+						<label class="zui-form-label"><span>*</span>详细地址：</label>
+						<div class="zui-input-block">
+							<input type="text" name="address" verify="address" autocomplete="off" value="广东 中山市 中山市 火炬开发区 综合行政执法局 " placeholder="请输入详细地址" class="zui-input"> 
+						</div>
+					</div>
+					<div class="zui-form-item">
+						<label class="zui-form-label"><span>*</span>手机号码：</label>
+						<div class="zui-input-inline">
+							<input type="tel" name="phone" verify="phone" autocomplete="off" value="16826940436" placeholder="请输入手机号码" class="zui-input"> 
+						</div>
+					</div>
+					<div style="margin-left:110px;">
+						<a href="" class="btn btn-primary btn-samll l-left">保存</a>
+						<a href="" class="btn btn-line-grey btn-samll l-left mrl10">取消</a>
+					</div>
+				</div>
+			</div>	
+			<div class="border-b mrt20">
+				<h2>发票信息</h2>
+				<div class="mrt20">
+					<div class="bill">电子发票</div>
+					<div class="bill">纸质发票</div>
+					<div class="zui-forms"><div class="zui-form-item">
+						<label class="zui-form-label"><span>*</span>发票抬头：</label>
+						<div class="zui-input-inline"  style="width:700px;">
+							<input type="text" name="address" verify="address" autocomplete="off" placeholder="请输入内容" value="" placeholder="请输入详细地址" class="zui-input"> 
+						</div>
+					</div></div>
+				</div>
+			</div>
+			<div class="comfirm-shop order-detail-shop mrt20">
+				<h2>商品信息</h2>
+				<table class="zui-table mrt20" zui-skin="line" style="border:none;"> 
+					<tbody>
+						<tr>
+							<td style="text-align:left">
+								<a href="" class="figure"><img src="../UploadFile/PcSite/shop01.jpg" height="100" width="100" alt=""></a>
+								<a href="" class="name">陈情老年智能手表 银灰色</a>
+							</td>
+							<td>158元x1</td>
+							<td class="total">158元</td>
+						</tr>
+						<tr>
+							<td style="text-align:left">
+								<a href="" class="figure"><img src="../UploadFile/PcSite/shop01.jpg" height="100" width="100" alt=""></a>
+								<a href="" class="name">陈情老年智能手表 银灰色</a>
+							</td>
+							<td>158元x1</td>
+							<td class="total">158元</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="order-sum-box">
+				<ul>
+					<li class="order-sum">商品总价：<label><span>316.00元</span></label></li>
+					<li class="order-sum">运费：<label><span>0.00元</span></label></li>
+					<li class="order-sum">实付金额：<label><span>316.00元</span></label></li>
+				</ul>
+			<div class="mrt20">
+				<a href="payment.html" class="btn btn-primary btn-big l-right mrl10">提交订单</a>
+				<a href="ShoppingCart.html" class="btn btn-line-grey btn-big l-left">返回购物车</a>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-service">
+				<ul class="list-service">
+					<li>
+						<a href="">
+							<i class="icon-service"><img src="../Images/PcSite/qitian.png" height="30" width="30" alt=""></i>7天包退
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon-service"><img src="../Images/PcSite/swtian.png" height="30" width="30" alt=""></i>15天包换
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon-service"><img src="../Images/PcSite/baoxiu.png" height="30" width="30" alt=""></i>1年保修
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="icon-service"><img src="../Images/PcSite/zixun.png" height="30" width="30" alt=""></i>24小时咨询
+						</a>
+					</li>
+					<li class="borr0">
+						<a href="">
+							<i class="icon-service"><img src="../Images/PcSite/baoyou.png" height="30" width="30" alt=""></i>顺丰包邮
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-links">
+				<dl class="col-links">
+					<dt>关于我们</dt>
+					<dd><a href="">企业介绍</a></dd>
+					<dd><a href="">企业优势</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>售后服务</dt>
+					<dd><a href="">售后服务</a></dd>
+					<dd><a href="">售后服务</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>战略合作</dt>
+					<dd><a href="">中国移动</a></dd>
+					<dd><a href="">中国移动</a></dd>
+				</dl>
+				<dl class="col-links">
+					<dt>会员中心</dt>
+					<dd><a href="">登录</a></dd>
+					<dd><a href="">注册</a></dd>
+				</dl>
+				<div class="col-contact">
+					<p class="phone"><img src="../Images/PcSite/phone.png" height="19" width="19" alt="">400-626-6216</p>
+					<p class="phone-info">周一至周日24小时热线<br>（仅收市话费）
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-info">
+			粤 ICP备 14052226 版权所有 广东卓商网络科技有限公司 广州爱陪伴健康云智能科技有限责任公司 ©2015-2016 chenqingbiao.com
+		</div>
+	</div>
+
+	<!-- 右侧悬浮热线 -->
+	<div class="float-phone">
+		<a href=""><img src="../Images/PcSite/phone-right.png" height="75" width="250" alt=""></a>
+	</div>
+	<script src="../Js/PcSite/jquery-1.9.1.min.js"></script>
+	 <!-- Swiper JS -->
+	 <script src="../Js/PcSite/swiper.min.js"></script>
+	 <script src="../Js/PcSite/zui.js"></script>
+	<!-- order-message 显示/隐藏 -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $("#b-showmessage").click(function(){
+	  $(".order-message").slideToggle("slow");
+	  });
+	});
+	</script>
+	<!-- modify-content 显示/隐藏 -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  $(".btn").click(function(){
+		  $("#modify-content").slideUp("slow");
+	  });
+	  $(".edit,.address-add").click(function(){
+		  $("#modify-content").slideDown("slow");
+	  });
+	});
+	</script>
+</body>
+</html>

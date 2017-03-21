@@ -36,7 +36,7 @@
 	<!-- breadcrumb -->
 	<div class="breadcrumb">
 		<div class="container">
-			<a href="index.html">首页</a><span class="symbol"> > </span><a href="member.html">会员中心 </a> <span class="symbol"> > </span><a href="member.html">退货/换货 </a> <span class="symbol"> > </span><span>填写申请</span>
+			<a href="index.html">首页</a><span class="symbol"> > </span><a href="member.html">会员中心 </a> <span class="symbol"> > </span><span>账户安全</span>
 		</div>
 	</div>
 	
@@ -47,73 +47,43 @@
 				<li><a href="order.html">我的订单</a></li>
 				<li><a href="address.html">地址管理</a></li>
 				<li><a href="collect.html">我的收藏</a></li>
-				<li class="sub-active"><a href="changeshop.html">退货/换货</a></li>
+				<li><a href="changeshop.html">退货/换货</a></li>
 				<li><a href="evaluate.html">我的评价</a></li>
-				<li><a href="account.html">账户安全</a></li>
+				<li class="sub-active"><a href="account.html">账户安全</a></li>
 				<li><a href="myinfo.html">个人资料</a></li>
 			</ul>
 		</div>
 		<div class="content-right">
 			<div class="content-box">
-				<div class="order-detail-shop">
-					<table class="zui-table" zui-skin="line"> 
-						<colgroup>
-							<col width="150">
-							<col width="338">
-							<col width="150">
-							<col width="150">
-							<col width="150">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>订单编号</th>
-								<th>商品名称</th>
-								<th>单价</th>
-								<th>数量</th>
-								<th>小计</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1170227929600249 </td>
-								<td style="text-align:left">
-									<a href="" class="figure"><img src="../UploadFile/PcSite/shop01.jpg" height="100" width="100" alt=""></a>
-									<a href="" class="name">陈情老年智能手表 银灰色</a>
-								</td>
-								<td>158元</td>
-								<td>1</td>
-								<td class="total">158元</td>
-							</tr>
-						</tbody>
-					</table>
+				<h1>账户安全</h1>
+				<div class="mrt20">
+					<span>安全级别：</span>
+					<div class="progress-bar"><span style="width:60%;"></span></div>
+					<span class="account-level">中</span>
+					<span class="account-tips">建议您全部启动全部安全设置，以保障账户安全</span>
 				</div>
-				<div class="zui-forms mrt20">
-					<div class="zui-form-item"> 
-						<label class="zui-form-label">退换货原因:</label> 
-						<div class="zui-input-block"> 
-							 <select class="zui-select" name="interest"> 
-								<option value="0" selected="">请选择</option> 
-								<option value="1">商品损坏</option> 
-								<option value="2">不想买了</option> 
-								<option value="3">拍错了</option> 
-								<option value="4">拍错了</option> 
-							</select> 
-						</div> 
-					</div> 
-					<div class="zui-form-item"> 
-						<label class="zui-form-label">描述说明：</label> 
-						<div class="zui-input-block"> 
-							<textarea placeholder="请描述您想退货/换货的原因" class="zui-textarea"></textarea> 
-						</div> 
-					</div> 
-					<div class="zui-form-item"> 
-						<label class="zui-form-label">上传照片：</label> 
-						<div class="zui-input-block"> 
-							<div class="upload-pic"><img src="../Images/PcSite/camera.png" height="40" width="48" alt=""></div>
-							<div class="tips-text">支持jpg 或 png，大小不超过2M，最多5张</div>
-						</div> 
-					</div>
-					<div class="zui-input-block mrt40"><a href="" class="btn btn-primary btn-samll">提交申请</a></div>
+				<div  class="mrt20">
+					<ul>
+						<li class="account-list">
+							<img src="../Images/PcSite/password.png" height="40" width="40" alt="">
+							<span>账号密码</span>
+							<p>用于保护帐号信息和登录安全</p>
+							<a class="btn btn-line-grey btn-samll" id="edit-code">修改</a>
+						</li>
+						<li class="account-list">
+							<img src="../Images/PcSite/email.png" height="40" width="40" alt="">
+							<span>安全邮箱</span>
+							<em>未绑定</em>
+							<p>安全邮箱将可用于登录帐号和重置密码，建议立即设置</p>
+							<a href="" class="btn btn-line-grey btn-samll">修改</a>
+						</li>
+						<li class="account-list">
+							<img src="../Images/PcSite/cellphone.png" height="40" width="40" alt="">
+							<span>安全手机168******10</span>
+							<p>安全手机可以用于登录帐号，重置密码或其他安全验证</p>
+							<a href="" class="btn btn-line-grey btn-samll">修改</a>
+						</li>
+					</ul>
 				</div>
 			</div>	
 		</div>
@@ -188,6 +158,20 @@
 	<div class="float-phone">
 		<a href=""><img src="../Images/PcSite/phone-right.png" height="75" width="250" alt=""></a>
 	</div>
+  <script src="../Js/PcSite/jquery-1.9.1.min.js"></script>
+  <script src="../Js/PcSite/layer/layer.js"></script>
+  <script type="text/javascript">
+  	$('#edit-code').on('click', function(){
+		  layer.open({
+		  type: 1,
+		  title:'修改密码',
+		  skin:'title-qing',
+		  area: ['400px'],
+		  shadeClose: true, //点击遮罩关闭
+		  content: '<div style="padding:40px;"><div class=""><div class="font16">原密码：</div><div class="zui-forms mrt10"><input type="text" name="title" autocomplete="off" placeholder="请输入标题" class="zui-input"></div></div><div class="mrt20"><div class="font16">原密码：</div><div class="zui-forms mrt10"><input type="text" name="title" autocomplete="off" placeholder="请输入标题" class="zui-input"></div></div><a href="" class="btn btn-line-grey btn-samll mrt40">取消</a></div>'
+		  });
+		});
+  </script>
 
 
 </body>

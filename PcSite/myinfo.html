@@ -36,7 +36,7 @@
 	<!-- breadcrumb -->
 	<div class="breadcrumb">
 		<div class="container">
-			<a href="index.html">首页</a><span class="symbol"> > </span><a href="member.html">会员中心 </a> <span class="symbol"> > </span><a href="member.html">退货/换货 </a> <span class="symbol"> > </span><span>填写申请</span>
+			<a href="index.html">首页</a><span class="symbol"> > </span><a href="member.html">会员中心 </a> <span class="symbol"> > </span><span>个人资料</span>
 		</div>
 	</div>
 	
@@ -47,74 +47,74 @@
 				<li><a href="order.html">我的订单</a></li>
 				<li><a href="address.html">地址管理</a></li>
 				<li><a href="collect.html">我的收藏</a></li>
-				<li class="sub-active"><a href="changeshop.html">退货/换货</a></li>
+				<li><a href="changeshop.html">退货/换货</a></li>
 				<li><a href="evaluate.html">我的评价</a></li>
 				<li><a href="account.html">账户安全</a></li>
-				<li><a href="myinfo.html">个人资料</a></li>
+				<li class="sub-active"><a href="myinfo.html">个人资料</a></li>
 			</ul>
 		</div>
 		<div class="content-right">
 			<div class="content-box">
-				<div class="order-detail-shop">
-					<table class="zui-table" zui-skin="line"> 
-						<colgroup>
-							<col width="150">
-							<col width="338">
-							<col width="150">
-							<col width="150">
-							<col width="150">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>订单编号</th>
-								<th>商品名称</th>
-								<th>单价</th>
-								<th>数量</th>
-								<th>小计</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1170227929600249 </td>
-								<td style="text-align:left">
-									<a href="" class="figure"><img src="../UploadFile/PcSite/shop01.jpg" height="100" width="100" alt=""></a>
-									<a href="" class="name">陈情老年智能手表 银灰色</a>
-								</td>
-								<td>158元</td>
-								<td>1</td>
-								<td class="total">158元</td>
-							</tr>
-						</tbody>
-					</table>
+				<h1>个人资料</h1>
+				<div class="user-img">
+					<div class="duser-img-area">
+						<img src="../UploadFile/PcSite/headimg.png" height="120" width="120" alt="">
+					</div>
+					<em class="user-edit"></em>
 				</div>
 				<div class="zui-forms mrt20">
+					<div class="zui-form-item">
+						<label class="zui-form-label">姓名：</label>
+						<div class="zui-input-inline">
+							<input type="text" name="name" verify="name" autocomplete="off" value="夏北Rita" placeholder="请输入名字" class="zui-input"> 
+						</div>
+					</div>
 					<div class="zui-form-item"> 
-						<label class="zui-form-label">退换货原因:</label> 
+						<label class="zui-form-label">生日：</label> 
 						<div class="zui-input-block"> 
-							 <select class="zui-select" name="interest"> 
-								<option value="0" selected="">请选择</option> 
-								<option value="1">商品损坏</option> 
-								<option value="2">不想买了</option> 
-								<option value="3">拍错了</option> 
-								<option value="4">拍错了</option> 
+							 <select class="zui-select" name="interest" style="width:83px;"> 
+								<option value="0" selected="">年</option> 
+								<option value="1" >1990年</option> 
+								<option value="2">1991年</option> 
+								<option value="3">1992年</option> 
+								<option value="4">1993年</option> 
+							</select> 
+							 <select class="zui-select" name="interest" style="width:83px;"> 
+								<option value="0" selected="">月</option> 
+								<option value="1">1月</option> 
+								<option value="2">2月</option> 
+								<option value="3">3月</option> 
+								<option value="4">4月</option> 
+								<option value="1">5月</option> 
+								<option value="2">6月</option> 
+								<option value="3">7月</option> 
+								<option value="4">8月</option> 
+								<option value="1">9月</option> 
+								<option value="2">10月</option> 
+								<option value="3">11月</option> 
+								<option value="4">12月</option> 
+							</select> 
+							 <select class="zui-select" name="interest" style="width:83px;"> 
+								<option value="0" selected="">日</option> 
+								<option value="1">1日</option> 
+								<option value="2">2日</option> 
+								<option value="3">3日</option> 
+								<option value="4">4日</option> 
 							</select> 
 						</div> 
 					</div> 
 					<div class="zui-form-item"> 
-						<label class="zui-form-label">描述说明：</label> 
+						<label class="zui-form-label">性别：</label> 
 						<div class="zui-input-block"> 
-							<textarea placeholder="请描述您想退货/换货的原因" class="zui-textarea"></textarea> 
+							<label class="zui-radio"><input name="radio" type="radio"><span></span><em>男</em></label> 
+							<label class="zui-radio"><input name="radio" type="radio"><span></span><em>女</em></label> 
 						</div> 
 					</div> 
-					<div class="zui-form-item"> 
-						<label class="zui-form-label">上传照片：</label> 
-						<div class="zui-input-block"> 
-							<div class="upload-pic"><img src="../Images/PcSite/camera.png" height="40" width="48" alt=""></div>
-							<div class="tips-text">支持jpg 或 png，大小不超过2M，最多5张</div>
-						</div> 
+					<div style="margin-left:110px;">
+						<a href="" class="btn btn-primary btn-samll l-left">保存</a>
+						<a href="" class="btn btn-line-grey btn-samll l-left mrl10">取消</a>
 					</div>
-					<div class="zui-input-block mrt40"><a href="" class="btn btn-primary btn-samll">提交申请</a></div>
-				</div>
+				</div>	
 			</div>	
 		</div>
 	</div>
@@ -189,6 +189,19 @@
 		<a href=""><img src="../Images/PcSite/phone-right.png" height="75" width="250" alt=""></a>
 	</div>
 
-
+  <script src="../Js/PcSite/jquery-1.9.1.min.js"></script>
+  <script src="../Js/PcSite/layer/layer.js"></script>
+  <script type="text/javascript">
+  	$('.user-edit').on('click', function(){
+		  layer.open({
+		  type: 1,
+		  title:'设置头像',
+		  skin:'title-qing',
+		  area: ['400px'],
+		  shadeClose: true, //点击遮罩关闭
+		  content: '<div style="padding:40px;"><div class="font16">请上传图片</div><div class="btn-block mrt10">上传头像</div><div class="tips-text">j支持pg 或 png，大小不超过2M</div><a href="" class="btn btn-line-grey btn-samll mrt40">取消</a></div>'
+		  });
+		});
+  </script>
 </body>
 </html>
