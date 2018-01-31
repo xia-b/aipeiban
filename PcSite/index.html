@@ -8,6 +8,18 @@
   <link href="../Css/PcSite/swiper.min.css" rel="stylesheet">
   <link href="../Css/PcSite/main.css" rel="stylesheet">
 </head>
+<style>
+	.swiper-container2 .swiper-wrapper li{
+		width: 275px!important;
+	}
+	.swiper-container2{
+		width: 1130px;
+		margin:0 35px;
+	}
+	.prev-btn,.next-btn{
+		z-index: 999;
+	}
+</style>
 <body>
 
 	<!-- header -->
@@ -29,18 +41,18 @@
 		      <li><a href="about.html">关于我们</a></li>
 		      <li><a href="member.html">会员中心</a></li>
 			</ul>
-		</div>	
+		</div>
 	</div>
 
 	<!-- swiper-banner -->
 	<div class="swiper-banner">
-		<div class="swiper-container swiper-no-swiping">
+		<div class="swiper-container swiper-container1 swiper-no-swiping">
 		    <div class="swiper-wrapper">
 		        <div class="swiper-slide"><img src="../UploadFile/PcSite/banner01.jpg" height="600" width="1600" alt=""></div>
 		        <div class="swiper-slide"><img src="../UploadFile/PcSite/banner02.jpg" height="600" width="1600" alt=""></div>
 		        <div class="swiper-slide"><img src="../UploadFile/PcSite/banner03.jpg" height="600" width="1600" alt=""></div>
 		    </div>
-		    <div class="swiper-pagination"></div>
+		    <div class="swiper-pagination swiper-pagination1"></div>
 		</div>
 	</div>
 
@@ -58,7 +70,7 @@
 						<div class="content">
 							<img src="../Images/PcSite/home.png" height="65" width="65" alt="">
 							<h2>居家养老解决方案</h2>
-							<h4>Community Yanglao Solution</h4>	
+							<h4>Community Yanglao Solution</h4>
 						</div>
 						<div class="content-active">
 							<img src="../Images/PcSite/home-active.png" height="65" width="65" alt="">
@@ -72,7 +84,7 @@
 						<div class="content">
 							<img src="../Images/PcSite/community.png" height="65" width="65" alt="">
 							<h2>社区养老解决方案</h2>
-							<h4>Community Yanglao Solution</h4>	
+							<h4>Community Yanglao Solution</h4>
 						</div>
 						<div class="content-active">
 							<img src="../Images/PcSite/community-active.png" height="65" width="65" alt="">
@@ -86,7 +98,7 @@
 						<div class="content">
 							<img src="../Images/PcSite/organization.png" height="65" width="65" alt="">
 							<h2>机构养老解决方案</h2>
-							<h4>Organizaton Yanglao Solution</h4>	
+							<h4>Organizaton Yanglao Solution</h4>
 						</div>
 						<div class="content-active">
 							<img src="../Images/PcSite/organization-active.png" height="65" width="65" alt="">
@@ -97,7 +109,7 @@
 
 					</li>
 				</ul>
-				
+
 			</div>
 		</div>
 	</div>
@@ -153,31 +165,53 @@
 				<h1>合作伙伴</h1>
 				<p>深度合作伙伴 提供优质服务</p>
 			</div>
-			<div class="partner-list ">
-				<ul class="">
-					<li class="box-shadow">
-						<a href="#">
-							<img src="../UploadFile/PcSite/partner01.png" height="150" width="275">
-						</a>
-					</li>
-					<li class="box-shadow">
-						<a href="#">
-							<img src="../UploadFile/PcSite/partner02.png" height="150" width="275">
-						</a>
-					</li>
-					<li class="box-shadow">
-						<a href="#">
-							<img src="../UploadFile/PcSite/partner03.png" height="150" width="275">
-						</a>
-					</li>
-					<li class="box-shadow">
-						<a href="#">
-							<img src="../UploadFile/PcSite/partner04.png" height="150" width="275">
-						</a>
-					</li>
-				</ul>
-				<div class="prev-btn"><img src="../Images/PcSite/left.png" height="22" width="12" alt=""></div>
-				<div class="next-btn"><img src="../Images/PcSite/right.png" height="22" width="12" alt=""></div>
+			<div class="partner-list">
+				<div class=" swiper-container swiper-container2">
+					<ul class="swiper-wrapper">
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner03.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner04.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner03.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner04.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner03.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner04.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner03.png" height="150" width="275">
+							</a>
+						</li>
+						<li class="box-shadow swiper-slide">
+							<a href="#">
+								<img src="../UploadFile/PcSite/partner04.png" height="150" width="275">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="prev-btn "><img src="../Images/PcSite/left.png" height="22" width="12" alt=""></div>
+				<div class="next-btn "><img src="../Images/PcSite/right.png" height="22" width="12" alt=""></div>
 			</div>
 		</div>
 	</div>
@@ -257,20 +291,30 @@
   <!-- Swiper JS -->
   <script src="../Js/PcSite/swiper.min.js"></script>
 	<!-- swiper-banner -->
-	<script language="javascript"> 
-	var mySwiper = new Swiper('.swiper-container',{
-	pagination : '.swiper-pagination',
-	loop : true,
-	autoplay: 3000,
-	paginationClickable :true,
+	<script language="javascript">
+		var mySwiper = new Swiper('.swiper-container1',{
+		loop : true,
+		autoplay: true,
+		pagination: {
+		el: '.swiper-pagination1',
+		clickable: true,
+		},
 	})
 	</script>
+	<script>
+		var swiper = new Swiper('.swiper-container2', {
+		  spaceBetween: 0,
+		  slidesPerGroup: 4,
+		  loop: true,
+		  slidesPerView : 'auto',
+		  loopedSlides :8,
+		  loopFillGroupWithBlank: true,
+		  navigation: {
+		    nextEl: '.next-btn',
+		    prevEl: '.prev-btn',
+		  },
+		});
+	</script>
 
-	<script language="javascript"> 
-	var mySwiper = new Swiper('.swiper-container',{
-	prevButton:'.swiper-button-prev',
-	nextButton:'.swiper-button-next',
-	})
-</script>	
 </body>
 </html>

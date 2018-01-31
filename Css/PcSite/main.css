@@ -810,14 +810,11 @@ hr {
   position: relative;
   margin-top: 20px;
 }
-.partner-list ul {
-  margin: 0 25px;
-}
 .partner-list ul li {
   width: 275px;
   height: 150px;
   float: left;
-  margin: 0 6.25px;
+  margin-right: 12px;
 }
 .partner-list .prev-btn,
 .partner-list .next-btn {
